@@ -35,14 +35,17 @@ python desafio.py
 - Assignment operators (`+=`, `-=`)
 - f-strings with `:.2f` to format money values
 - A function with `try` / `except ValueError` to read numbers safely
+- One function per operation (`depositar`, `sacar`, `exibir_extrato`), with positional-only (`/`) and keyword-only (`*`) parameters
+- Functions returning several values as a tuple
+- A `main()` function guarded by `if __name__ == "__main__":`
 
 ## Melhorias em relação ao desafio original (PT-BR)
 
 - Validação de entrada: o programa não fecha com `ValueError` quando a pessoa digita letras.
 - Aceita valores com vírgula, no formato brasileiro.
+- Código separado em funções, uma para cada operação, com mensagens de confirmação de depósito e saque.
 
 ## Próximos passos
 
-- Separar depósito, saque e extrato em funções.
 - Suportar vários usuários e contas.
 - Adicionar testes automatizados com `pytest`.
